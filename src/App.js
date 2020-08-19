@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import WeatherWidget from './widgets/Weather'
+import WeatherModule from './component/Weather'
+import NewsModule from './component/News'
 
 function App() {
   return (
@@ -9,10 +10,10 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-6">
-            <WeatherWidget />
+            <WeatherModule />
           </div>
-          <div className="col-6">
-            <p className="mid-title">column two</p>
+          <div className="col-6">            
+            <NewsModule />           
           </div>
         </div>
       </div>

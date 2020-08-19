@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import '../App.css';
 import 'weather-icons/css/weather-icons.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Weather from '../component/weather.component';
-import Form from '../component/form.component';
+import Weather from './weather.component';
+import Form from './form.component';
 
 // obscure the API key a little bit. If someone really wants to steal this free API key
 // they can figure it out but hopefully it won't be as easy to pick up with a bot
@@ -11,7 +11,7 @@ const API_Token_A = process.env.REACT_APP_ACCESS_TOKEN_A;  //+ String.fromCharCo
 const API_Token_B = process.env.REACT_APP_ACCESS_TOKEN_B;
 const API_key = API_Token_A + API_Token_B;
 
-export default class WeatherWidget extends Component {
+export default class WeatherModule extends Component {
   constructor() {
     super();
     this.state = {
